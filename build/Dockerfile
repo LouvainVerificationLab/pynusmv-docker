@@ -1,3 +1,12 @@
+# This container provides you with a nice playground to tweak and build your 
+# version of pynusmv.
+#
+# This file is part of the pynusmv distribution. As such it is licensed to you
+# under the term of the LGPLv2. For more information regarding the legal aspect
+# of this licensing, please refer to the full text of the license on the free
+# software foundation website.
+#
+# Author: X. Gillard <xavier.gillard [at] uclouvain.be>
 FROM ubuntu
 
 MAINTAINER Xavier Gillard <xavier.gillard@uclouvain.be>
