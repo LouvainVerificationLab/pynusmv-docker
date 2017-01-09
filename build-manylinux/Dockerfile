@@ -39,5 +39,9 @@ RUN cd swig-3.0.11 && ./configure --without-pcre && make && make install
 COPY release.sh /
 RUN chmod +x /release.sh
 
+# embark the testing script
+COPY test.sh /
+RUN chmod +x /test.sh
+
 # Don't forget to git pull !!!!
 RUN git clone https://github.com/LouvainVerificationLab/pynusmv.git
