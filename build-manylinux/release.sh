@@ -14,7 +14,7 @@ export OLD_PATH=$PATH
 function release {
   export PATH=$OLD_PATH:"/opt/python/cp$1-cp$1m/bin/"
   
-  python3 setup.py clean --no-deps
+  python3 setup.py clean --no-deps --no-dist
   python3 setup.py bdist_wheel
   
   auditwheel addtag dist/*.whl
